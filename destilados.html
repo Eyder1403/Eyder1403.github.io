@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./ron.css">
+    <link rel="icon" href="/assets/img/logo better.png">
+    <title>PRODUCTOS</title>
+</head>
+<body>
+    <Section>
+      <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html"><img src="./assets/img/logo1.png" alt="Licoreria la Orquidea"></a>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <a href="/index.html">Inicio</a>
+                    <div class="dropdown">
+                        <a href="/products.html" class="requires-permission">Productos</a>
+                    </div>
+                    <a href="/services.html">Servicios</a>
+                    <a href="/cliente.html">Atención al cliente</a>
+                </nav>
+                <a href="/login.html" class="btn-81"><span>Iniciar sesión</span></a>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="card-container">
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Antioque_o.jpg" alt="Ron Añejo" class="card-img">
+                <div class="card-info">
+                    <h3>Anís Antioqueño</h3>
+                    <p>Licor seco obtenido con alcohol extra puro a partir de los derivados de la (melaza, miel virgen y azúcar), con su sabor tradicional de la esencia de anís.</p>
+                    <button>Ver Más</button>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Anis_Cartujo.jpg" alt="Ron Blanco" class="card-img">
+                <div class="card-info">
+                    <h3>Anís Cartujo</h3>
+                    <p>Anís Cartujo, de origen Venezolano, una de las marcas de anís más conocidas en América. Se suele tomar puro o mezclado con jugos, yogur</p>
+                    <button>Ver Más</button>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Vodka_Gordon.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Vodka Gordons</h3>
+                    <p>Gordons es un vodka que se hace con granos y agua de la mejor calidad, sin aditivos, a diferencia de otros vodkas.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 4 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Vodka_Gordon_Uva.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Vodka Gordons Uva</h3>
+                    <p>Gordons es un vodka que se hace con granos y agua de la mejor calidad con sabor a uva, sin aditivos, a diferencia de otros vodkas.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 5 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Relative_Dry_Gin.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ginebra Relative</h3>
+                    <p>Es una excelente bebida alcohólica que después de ser destilada se aromatiza con bayas de enebro.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 6 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Wimbledon_Gin.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ginebra Wimbledon</h3>
+                    <p>Elaborada con el más puro alcohol extra neutro, incoloro y sin olor, de sabor neutral, especial para tomarla mezclada o en la realización de deliciosos cócteles.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 7 -->
+            <div class="card">
+                <img src="/assets/img/Licores/destilados/Frida_kahlo_Reposado.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Tequila Frida Kahlo Reposado</h3>
+                    <p>Frida Kahlo Reposado es un tequila reposado, o aged, que sigue el proceso de fermentación natural del agave de los tequilas Frida Kahlo por el cual la planta queda durante cuatro días depositando su jugo.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 8 -->
+            <div class="card">
+                <img src="assets/img/Licores/destilados/Corobore.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Cocuy Corobore</h3>
+                    <p>Origen: Venezuela
+                        Capacidad: 0.75 Lts.
+                        Unidades por caja: 12</p>
+                    <button>Ver Más</button>
+                </div>   
+            </div>
+        </div>
+        
+        <div class="container">
+            <button id="showFormButton" class="btn-add requires-permission"><i class="fas fa-plus"></i> Agregar Producto</button>
+            <form id="productForm" style="display: none;">
+                <h2>Agregar Nuevo Producto</h2>
+                <label for="productName">Nombre del Producto:</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="productDescription">Descripción:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+                
+                <label for="productImage">URL de la Imagen:</label>
+                <input type="url" id="productImage" name="productImage" required>
+                
+                <button type="submit" >Agregar Producto</button>
+                <button type="button" id="cancelButton">Cancelar</button>
+            </form>
+        </div>
+    </section>
+    <script src="form3.js"></script>
+
+    </body>
+    </html>

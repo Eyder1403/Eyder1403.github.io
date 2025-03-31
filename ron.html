@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./ron.css">
+    <link rel="icon" href="/assets/img/logo better.png">
+    <title>PRODUCTOS</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html"><img src="./assets/img/logo1.png" alt="Licoreria la Orquidea"></a>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <a href="/indexadmin.html">Inicio</a>
+                    <div class="dropdown">
+                        <a href="/products.html" class="requires-permission">Productos</a>
+                    </div>
+                    <a href="/services.html">Servicios</a>
+                    <a href="/cliente.html">Atención al cliente</a>
+                </nav>
+                <a href="/login.html" class="btn-81"><span>Iniciar sesión</span></a>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        <div class="card-container">
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Carupano_6_a_os.jpg" alt="Ron Añejo" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Carúpano Añejo</h3>
+                    <p>Carúpano Añejo es un singular Ron Viejo de 40º G.L.</p>
+                    <button>Ver Más</button>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Cacique_0.75.jpg" alt="Ron Blanco" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Cacique</h3>
+                    <p>Cacique añejo es un ron puro, natural, sin saborizantes añadidos mezcla de rones envejecidos hasta 4 años en barricas de roble americano.</p>
+                    <button>Ver Más</button>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Estelar.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Estelar</h3>
+                    <p>Estelar es una mezcla de rones de más de 4 años unida a su esmerada técnica de envejecimiento en barricas de roble.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 4 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Cacique_500.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Cacique 500 Años</h3>
+                    <p>Ron Cacique 500 Extra Añejo Gran Reserva es una de las marcas de ron de Venezuela Lanzado en 1992 por el 500 aniversario del descubrimiento de América.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 5 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Diplomatico_Reserva.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Diplomático Reserva</h3>
+                    <p>Diplomático Reserva es una extraordinaria mezcla de rones envejecidos hasta ocho años.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 6 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Linaje.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Santa Teresa Linaje</h3>
+                    <p>Es el ron premium de la casa santa Teresa. Fue lanzado en 2012 y ha tenido un crecimiento importante, logrando ganar el 30% del mercado durante sus primeros tres años.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 7 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Roble_Viejo_Extra_A_ejo.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Roble Extra Añejo</h3>
+                    <p>Excepcional ron extra añejo, producto del envejecimiento en barricas de roble blanco americano, de alcoholes destilados recuperando únicamente el corazón de la destilación.</p>
+                    <button>Ver Más</button>
+                </div>    
+            </div>
+            <!-- Producto 8 -->
+            <div class="card">
+                <img src="https://www.prolicor.com.ve/wp-content/uploads/2018/06/Diplomatico_Mantuano.jpg" alt="Ron Dorado" class="card-img">
+                <div class="card-info">
+                    <h3>Ron Diplomático Mantuano</h3>
+                    <p>Mantuano es una extraordinaria mezcla de rones envejecidos hasta ocho años en barricas de roble blanco, que previamente sirvieron para envejecer whisky americano y whisky de malta.</p>
+                    <button>Ver Más</button>
+                </div>   
+            </div>
+        </div>
+        <div class="container">
+            <button id="showFormButton" class="btn-add requires-permission"><i class="fas fa-plus"></i> Agregar Producto</button>
+            <form id="productForm" style="display: none;">
+                <h2>Agregar Nuevo Producto</h2>
+                <label for="productName">Nombre del Producto:</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="productDescription">Descripción:</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+                
+                <label for="productImage">URL de la Imagen:</label>
+                <input type="url" id="productImage" name="productImage" required>
+                
+                <button type="submit" >Agregar Producto</button>
+                <button type="button" id="cancelButton">Cancelar</button>
+            </form>
+        </div>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
